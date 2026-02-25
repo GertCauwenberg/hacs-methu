@@ -2,7 +2,7 @@
 
 The met.hu forecast page works as follows:
 1. User types a settlement name into an autocomplete field.
-2. The autocomplete queries an endpoint (likely /ac.php or similar) returning
+2. The autocomplete queries an endpoint  returning
    JSON with {kod, lt, n, tel} for each matching settlement.
 3. Selecting a settlement POSTs to main.php with:
      srctext=&valtozatlan=true&kod=<code>&lt=<lat>&n=<lon>&tel=<name>&kepid=
@@ -27,8 +27,7 @@ _LOGGER = logging.getLogger(__name__)
 BASE_URL = "https://www.met.hu"
 MAIN_PHP = f"{BASE_URL}/idojaras/elorejelzes/magyarorszagi_telepulesek/main.php"
 # The autocomplete endpoint – jQuery UI autocomplete typically hits ?term=<query>
-# Common patterns observed on met.hu-style sites:
-AC_URL = f"{BASE_URL}/idojaras/elorejelzes/magyarorszagi_telepulesek/ac.php"
+AC_URL = f"{BASE_URL}/jquery/search.php"
 
 HEADERS = {
     "User-Agent": (

@@ -12,9 +12,6 @@ CONF_SCAN_INTERVAL = "scan_interval"
 DEFAULT_SCAN_INTERVAL = 60  # minutes
 MIN_SCAN_INTERVAL = 30
 
-MAIN_PHP = "https://www.met.hu/idojaras/elorejelzes/magyarorszagi_telepulesek/main.php"
-AC_PHP   = "https://www.met.hu/idojaras/elorejelzes/magyarorszagi_telepulesek/ac.php"
-
 ATTR_SETTLEMENT = "settlement"
 ATTR_FORECAST_TIME = "forecast_time"
 ATTR_TEMPERATURE = "temperature"

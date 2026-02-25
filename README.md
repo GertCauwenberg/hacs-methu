@@ -37,7 +37,7 @@ A Home Assistant custom integration that fetches weather forecast data from the 
 
 The integration uses two met.hu endpoints:
 
-1. **Autocomplete** (`ac.php?term=<name>`) — resolves the settlement name to its internal identifiers: `kod` (settlement code), `lt` (latitude), `n` (longitude).
+1. **Autocomplete** (`search.php?term=<name>`) — resolves the settlement name to its internal identifiers: `kod` (settlement code), `lt` (latitude), `n` (longitude).
 2. **Forecast** (`main.php` via HTTP POST) — submits `kod`, `lt`, `n`, `tel` and receives an HTML forecast table covering the next several days in 6-hourly periods.
 
 ## Configuration
