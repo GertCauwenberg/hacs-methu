@@ -11,7 +11,7 @@
       },
       "manual": {
         "title": "Kézi paraméterek megadása",
-        "description": "Nem sikerült automatikusan megtalálni: '{settlement}'. A paramétereket a böngésző Hálózat fülén találja, miután a met.hu oldalán kiválasztja a települést — nézze a main.php POST kérést.",
+        "description": "Nem sikerült automatikusan megtalálni: {settlement}. A paramétereket a böngésző Hálózat fülén találja, miután a met.hu oldalán kiválasztja a települést — nézze a main.php POST kérést.",
         "data": {
           "kod": "Településkód (kod=)",
           "lat": "Szélességi fok (lt=)",
