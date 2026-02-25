@@ -1,13 +1,13 @@
 {
   "domain": "methu_forecast",
   "name": "HungaroMet (met.hu) Forecast",
-  "version": "1.0.0",
-  "documentation": "https://github.com/GertCauwenberg/methu_forecast",
-  "issue_tracker": "https://github.com/GertCauwenberg/methu_forecast/issues",
   "codeowners": ["@GertCauwenberg"],
-  "requirements": ["beautifulsoup4>=4.12.0"],
-  "dependencies": [],
-  "iot_class": "cloud_polling",
   "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/GertCauwenberg/methu_forecast",
   "integration_type": "hub"
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/GertCauwenberg/methu_forecast/issues",
+  "requirements": ["beautifulsoup4>=4.12.0"],
+  "version": "1.0.0",
 }
