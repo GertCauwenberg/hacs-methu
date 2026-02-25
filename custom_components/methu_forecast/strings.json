@@ -11,7 +11,7 @@
       },
       "manual": {
         "title": "Manual settlement parameters",
-        "description": "Could not auto-resolve '{settlement}'. Find the parameters by opening the Network tab in your browser while selecting the settlement on met.hu, then look at the POST request to main.php.",
+        "description": "Could not auto-resolve {settlement}. Find the parameters by opening the Network tab in your browser while selecting the settlement on met.hu, then look at the POST request to main.php.",
         "data": {
           "kod": "Settlement code (kod=)",
           "lat": "Latitude (lt=)",
