@@ -1,0 +1,41 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "HungaroMet Forecast Setup",
+        "description": "Enter the name of a Hungarian settlement (e.g. {example}). The integration will look it up automatically.",
+        "data": {
+          "settlement": "Settlement name",
+          "scan_interval": "Update interval (minutes)"
+        }
+      },
+      "manual": {
+        "title": "Manual settlement parameters",
+        "description": "Could not auto-resolve '{settlement}'. Find the parameters by opening the Network tab in your browser while selecting the settlement on met.hu, then look at the POST request to main.php.",
+        "data": {
+          "kod": "Settlement code (kod=)",
+          "lat": "Latitude (lt=)",
+          "lon": "Longitude (n=)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to met.hu. Check your internet connection.",
+      "settlement_not_found": "Settlement not found. Check the spelling (use accented characters: é, á, ő …).",
+      "unknown": "Unexpected error. Check the Home Assistant logs."
+    },
+    "abort": {
+      "already_configured": "This settlement is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "HungaroMet Forecast Options",
+        "data": {
+          "scan_interval": "Update interval (minutes)"
+        }
+      }
+    }
+  }
+}

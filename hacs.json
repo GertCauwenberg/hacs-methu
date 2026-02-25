@@ -1,0 +1,6 @@
+{
+  "name": "HungaroMet (met.hu) Forecast",
+  "content_in_root": false,
+  "filename": "methu_forecast.zip",
+  "homeassistant": "2023.1.0"
+}

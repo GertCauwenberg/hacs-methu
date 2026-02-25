@@ -1,0 +1,41 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "HungaroMet előrejelzés beállítása",
+        "description": "Adja meg a település nevét (pl. {example}). Az integráció automatikusan megkeresi az adatait.",
+        "data": {
+          "settlement": "Település neve",
+          "scan_interval": "Frissítési időköz (perc)"
+        }
+      },
+      "manual": {
+        "title": "Kézi paraméterek megadása",
+        "description": "Nem sikerült automatikusan megtalálni: '{settlement}'. A paramétereket a böngésző Hálózat fülén találja, miután a met.hu oldalán kiválasztja a települést — nézze a main.php POST kérést.",
+        "data": {
+          "kod": "Településkód (kod=)",
+          "lat": "Szélességi fok (lt=)",
+          "lon": "Hosszúsági fok (n=)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Nem sikerült csatlakozni a met.hu-hoz. Ellenőrizze az internetkapcsolatot.",
+      "settlement_not_found": "A település nem található. Ellenőrizze a helyesírást (ékezetes betűkkel: é, á, ő …).",
+      "unknown": "Váratlan hiba történt. Ellenőrizze a Home Assistant naplóját."
+    },
+    "abort": {
+      "already_configured": "Ez a település már be van állítva."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "HungaroMet előrejelzés beállítások",
+        "data": {
+          "scan_interval": "Frissítési időköz (perc)"
+        }
+      }
+    }
+  }
+}
