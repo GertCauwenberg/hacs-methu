@@ -66,7 +66,7 @@ SENSOR_DESCRIPTIONS: tuple[SensorEntityDescription, ...] = (
         key="cloud_cover",
         name="Cloud Cover",
         native_unit_of_measurement=PERCENTAGE,
-        device_class=SensorDeviceClass.CLOUD_COVERAGE,
+        device_class=None,
         state_class=SensorStateClass.MEASUREMENT,
         icon="mdi:weather-cloudy",
     ),
