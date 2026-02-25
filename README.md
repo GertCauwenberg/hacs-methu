@@ -122,3 +122,4 @@ GNUv3 License — see [LICENSE](LICENSE) file.
 ## Credits
 
 Weather data provided by [HungaroMet Magyar Meteorológiai Szolgáltató Nonprofit Zrt.](https://www.met.hu)
+Icon from Wikimedia Commons: https://commons.wikimedia.org/wiki/File:P_meteorology.png
