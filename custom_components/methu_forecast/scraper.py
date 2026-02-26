@@ -115,6 +115,8 @@ ICON_CONDITION = {
     "w012e": "pouring",
     "w013":  "lightning-rainy", # zivatar
     "w013e": "lightning-rainy",
+    "w104":  "lightning-rainy", # zivatar
+    "w104e": "lightning-rainy",
     "w014":  "snowy-rainy",     # havas eső
     "w014e": "snowy-rainy",
     "w015":  "snowy",           # hószállingózás
