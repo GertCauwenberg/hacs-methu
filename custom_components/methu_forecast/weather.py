@@ -47,7 +47,9 @@ def _period_to_forecast(p: ForecastPeriod) -> Forecast:
     if p.forecast_time:
         fc["datetime"] = p.forecast_time.isoformat()
     fc["condition"] = _to_ha_condition(p.weather_condition)
-    if p.temperature is not None:
+    if p.temperature_max is not None:
+        fc["temperature"] = p.temperature_max
+    elif p.temperature is not None:
         fc["temperature"] = p.temperature
     if p.temperature_min is not None:
         fc["templow"] = p.temperature_min
