@@ -536,8 +536,9 @@ def _hu_wind_to_abbrev(text: str) -> str | None:
 # ---------------------------------------------------------------------------
 
 def _find_current(periods: list[ForecastPeriod]) -> ForecastPeriod | None:
-    """Return the period closest to now (first future or last past)."""
-    now = datetime.now()
+    """Return the period closest to now (first future or last past).
+       met.hu provides updates per 6 hours, so we subtract 3 hours from now"""
+    now = datetime.now() - timedelta(hours=3)
     future = [p for p in periods if p.forecast_time and p.forecast_time >= now]
     if future:
         return future[0]
