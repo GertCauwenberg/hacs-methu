@@ -417,6 +417,8 @@ def _parse_data_row(tr: Tag, current_date: date | None, year: int) -> ForecastPe
             src = img.get("src", "")
             p.weather_condition  = _icon_src_to_condition(src)
             p.weather_description = _extract_tooltip_description(ikon_td)
+            if p.weather_condition == 'exceptional':
+                _LOGGER.warning("No icon_condition found for %s, description is %s", src, p.weather_description)
             break
 
     # --- wind direction (degrees from tooltip) ---
